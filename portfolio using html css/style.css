@@ -1,0 +1,191 @@
+/*font-family: 'Poppins', sans-serif;*/
+/*font-family: 'Kalam', cursive;
+/*font-family: 'Poppins', sans-serif;*/
+header{
+width: 100%;
+height: 100vh;
+background-image:url('https://i.pinimg.com/736x/79/f8/74/79f8748128730cfed32d89d871755e85.jpg');
+background-size:cover;
+color:Black;
+}
+nav{
+width:100%;
+height:100px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+padding:0 0px;
+font-family: 'Poppins', sans-serif;
+}
+
+.logo{
+font-size:2em;
+letter-spacing; 2px;
+font-weight:bold;
+}
+
+.menu a{
+text-decoration:none;
+color:red;
+font-size:1.2em;
+padding:0.5rem 1rem
+}
+.menu a:nth-child(4){
+background:#FFFFFF;
+border-radius: 8px;
+margin:0 1rem;
+}
+.menu a:hover{
+background:#FFFFFF;
+border-radius: 8px;
+}
+
+.container{
+width:100%;
+hieght:100%;
+display:flex;
+justify-content:space-around;
+align-item:center;
+flex-wrap:wrap;
+padding:0 70px;
+}
+.left{
+flex-basis:60%
+}
+.right{
+flex-basis:30%
+}
+.left h2{
+font-family: 'Poppins', sans-serif;
+}
+.left h1{
+font-family: 'Kalam', cursive;
+font-size: 5em;
+}
+.left p{
+font-family: 'Poppins', sans-serif;
+line-height:2rem;
+}
+#bio{
+cursor:pointer;
+padding:150 px 70px;
+width:100%;
+height:100%;
+display:flex;
+justify-content:space-between;
+align-items:flex-start;
+flex-wrap:wrap;
+font-family: 'Poppins', sans-serif;
+}
+.leftbio{
+flex-basis:40%;
+}
+.rightbio{
+flex-basis:60%;
+}
+.rightbio{
+text-align:right;
+}
+.rightbio p{
+margin:15px 0;
+line-height: 2.5rem;
+}
+.rightbio h1 {
+font-size: 3rem;
+}
+.info{
+text-align:right;
+}
+
+.info{
+display:flex;
+justify-content: space-around;
+align-items:flex-start;
+flex-wrap:wrap;
+text-align:left;
+}
+#follow{
+text-align:center ;
+}
+#follow i{
+color: #6ab04c;
+font-size:1.5rem;
+margin:0 0.5rem;
+}
+.link-h{
+text-align:center;
+margin-top: 3rem;
+}
+
+#hire{
+text-decoration:none;
+color:white;
+background:#6ab04c;
+font-size:1.2em;
+padding:0.5rem 1rem;
+border-radius:10px;
+}
+
+#cv{
+text-decoration:none;
+color:black;
+padding:1rem 2 rem;
+border-radius: 10px;
+font-size:1.5rem;
+margin:0 1rem;
+border: 1px dashed grey;
+}
+#services{
+padding:50px 70px;
+width:100%;
+height:100%;
+background: rgba(255,255,237);
+font-family: 'Poppins', sans-serif;
+text-align:center;
+}
+.intro h1{
+font-size:2rem;
+}
+
+.card{
+width: 100%;
+height:100%;
+display:flex;
+justify-content: space-between;
+align-items:center;
+flex-wrap:wrap;
+margin-top:1.5rem;
+}
+.cardbody{
+flex-basis:30%;
+color: black;
+background: white;
+padding:0 1rem;
+border-radius:8px;
+}
+.cardbody h3{
+font-size: 1.5rem;
+margin:0.5rem 0;
+}
+.cardbody i{
+font-size: 2.5rem;
+color: #6ab04c;
+}
+.cardimg img{
+width:100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
