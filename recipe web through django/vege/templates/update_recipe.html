@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Update Recipe</title>
+  <style>
+    body {
+      background-color: #f9f9f9;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 30px auto;
+      padding: 25px;
+      background-color: rgba(141, 213, 224, 0.838);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 600;
+    }
+
+    input[type="text"],
+    input[type="file"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #007bff;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0069d9;
+    }
+
+    img.preview {
+      width: 100px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 5px;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+      <h2>Update Recipe</h2>
+
+      <label for="recipe_name">Recipe Name</label>
+      <input type="text" id="recipe_name" name="recipe_name" value="{{ recipe.recipe_name }}" required>
+
+      <label for="recipe_description">Recipe Description</label>
+      <textarea id="recipe_description" name="recipe_description" rows="4" required>{{ recipe.recipe_description }}</textarea>
+
+      <label>Current Image</label><br>
+      <img src="{{ recipe.recipe_image.url }}" class="preview" alt="Current Image"><br><br>
+
+      <label for="recipe_image">Change Image (optional)</label>
+      <input type="file" id="recipe_image" name="recipe_image">
+
+      <button type="submit">Update Recipe</button>
+    </form>
+  </div>
+</body>
+</html>
